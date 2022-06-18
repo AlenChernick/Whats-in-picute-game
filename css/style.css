@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&family=Roboto+Condensed:wght@700&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  transition: 0.5s;
+}
+
+body {
+  animation-duration: 5s;
+  animation-name: swish;
+  animation-iteration-count: infinite;
+}
+
+h1 {
+  font-size: 38px;
+  cursor: default;
+  display: block;
+  text-align: center;
+}
+
+img {
+  margin: auto;
+  width: 530px;
+  display: block;
+  border: 1px solid black;
+  box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  border-radius: 5%;
+}
+
+button {
+  margin: auto;
+  margin-top: 50px;
+  width: 250px;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  -moz-box-shadow: -2px 1px 5px -3px rgba(0, 0, 0, 1);
+  border-radius: 50px;
+  background-color: wheat;
+}
+
+.in-picture-container {
+  width: 750px;
+  height: 820px;
+  margin: auto;
+  margin-top: 40px;
+  padding-top: 10px;
+  background-color: transparent;
+  box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 1);
+}
+
+h1:hover {
+  text-decoration: underline;
+  color: rgb(184, 185, 114);
+  color: linear-gradient(90deg, rgb(0, 0, 0) 8%, rgba(246, 246, 246, 1) 52%, rgb(236, 223, 47) 80%);
+  opacity: 0.3;
+  font-size: 45px;
+  text-shadow: 0px 0px 6px white;
+}
+
+button:hover {
+  mix-blend-mode: hard-light;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  transform: translateY(10px);
+}
+
+img:hover {
+  filter: saturate(150%);
+}
+
+@keyframes swish {
+  from {
+    background-color: #b2fefa;
+  }
+  50% {
+    background-color: #0ed2f7;
+  }
+  to {
+    background-color: #b2fefa;
+  }
+}
